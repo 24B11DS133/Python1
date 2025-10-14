@@ -1,0 +1,25 @@
+import numpy as np # Creating a sample array 
+arr = np.array([5, 2, 9, 7, 2, 8, 1, 9, 4]) 
+print("Original Array:", arr) 
+# a) Extract numbers less and greater than a specified number num = 5 less_than_num = arr[arr < num] 
+greater_than_num = arr[arr > num] 
+ 
+print("\nNumbers less than", num, ":", less_than_num) print("Numbers greater than", num, ":", greater_than_num) 
+ 
+# b) Find indices of maximum and minimum numbers print("\nIndex of maximum number:", np.argmax(arr)) print("Index of minimum number:", np.argmin(arr)) 
+ 
+# Maximum and minimum values print("Maximum value:", np.max(arr)) 
+print("Minimum value:", np.min(arr)) 
+ 
+# Representation of the array 
+print("\nArray representation:", np.array_repr(arr)) 
+ 
+# Count occurrences of a specific number value_to_count = 2 
+print(f"Count of {value_to_count} in array:", np.count_nonzero(arr == value_to_count)) 
+ 
+# Bincount (for non-negative integers) 
+print("Bincount of array:", np.bincount(arr)) 
+ 
+# Unique elements unique_elements = np.unique(arr) 
+print("Unique elements in array:", unique_elements) 
+ 
