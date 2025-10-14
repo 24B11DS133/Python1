@@ -1,0 +1,17 @@
+import numpy as np 
+# a) To get help on the add function print("Help on numpy.add function:") help(np.add) 
+# Creating arrays using array(), zeros(), ones(), linspace() arr1 = np.array([5, 6, 7, 8]) arr2 = np.array([8, 7, 6, 5]) 
+zeros_arr = np.zeros(4) ones_arr = np.ones(4) lin_arr = np.linspace(0, 10, 5) 
+print("\nArray 1:", arr1) print("Array 2:", arr2) print("Zeros Array:", zeros_arr) print("Ones Array:", ones_arr) print("Linspace Array:", lin_arr) 
+# b) To test whether none of the elements of a given array is zero arr3 = np.array([1, 2, 3, 4]) result = np.all(arr3) 
+print("\nNone of the elements are zero:", result) 
+arr4 = np.array([1, 0, 3, 4]) 
+print("None of the elements are zero:", np.all(arr4)) 
+
+# c) Element-wise comparison of two arrays print("\nElement-wise Comparison between arr1 and arr2:") print("Greater: ", np.greater(arr1, arr2)) print("Greater_equal: ", np.greater_equal(arr1, arr2)) print("Less: ", np.less(arr1, arr2)) print("Less_equal: ", np.less_equal(arr1, arr2)) print("Equal: ", np.equal(arr1, arr2)) 
+ 
+# Checking equality within a tolerance arr5 = np.array([1.0, 2.000001, 3.0]) arr6 = np.array([1.0, 2.0, 3.0]) 
+print("\nEqual within a tolerance:", np.allclose(arr5, arr6)) 
+ 
+# Using add() and tolist() sum_arr = np.add(arr1, arr2) print("\nAddition of arr1 and arr2:", sum_arr) print("Sum array as list:", sum_arr.tolist()) 
+# Showing basic info (array type, shape, dtype) print("\nArray Info:") print("Type:", type(arr1)) print("Shape:", arr1.shape) print("Data type:", arr1.dtype) 
