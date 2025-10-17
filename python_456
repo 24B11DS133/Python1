@@ -1,0 +1,21 @@
+import numpy as np 
+import matplotlib.pyplot as plt 
+subjects = ['Math', 'Science', 'English', 
+'History', 'Art'] 
+marks_A = [85, 90, 78, 88, 95] 
+marks_B = [80, 85, 82, 89, 92] 
+x = np.arange(len(subjects))  # positions on x
+axis 
+width = 0.35  # bar width 
+plt.bar(x - width/2, marks_A, width, 
+label='Student A', color='lightcoral') 
+plt.bar(x + width/2, marks_B, width, 
+label='Student B', color='lightgreen') 
+plt.title("Comparison of Marks Between Two 
+Students") 
+plt.xlabel("Subjects") 
+plt.ylabel("Marks") 
+plt.xticks(x, subjects) 
+plt.legend() 
+plt.grid(axis='y', linestyle='--', alpha=0.6) 
+plt.show()
