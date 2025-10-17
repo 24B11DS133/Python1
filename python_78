@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt 
+# Data 
+subjects = ['Math', 'Science', 'English', 
+'History', 'Art'] 
+marks = [85, 90, 78, 88, 95] 
+# Create a horizontal bar plot 
+plt.barh(subjects, marks, color='lightgreen', 
+edgecolor='black') 
+# Add title and labels 
+plt.title("Student Marks in Different Subjects") 
+plt.xlabel("Marks") 
+plt.ylabel("Subjects") 
+# Display the plot 
+plt.show()
