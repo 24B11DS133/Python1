@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt 
+# Data 
+subjects = ['Math', 'Science', 'English', 
+'History', 'Art'] 
+marks = [85, 90, 78, 88, 95] 
+# Custom colors and edge styles 
+plt.bar(subjects, marks, color=['skyblue', 
+'lightgreen', 'salmon', 'violet', 'gold'], 
+edgecolor='black', linewidth=1.5) 
+plt.title("Student Marks in Different Subjects", 
+fontsize=14, fontweight='bold', 
+color='darkblue') 
+plt.xlabel("Subjects", fontsize=12) 
+plt.ylabel("Marks", fontsize=12) 
+plt.grid(axis='y', linestyle='--', alpha=0.7) 
+plt.show()
